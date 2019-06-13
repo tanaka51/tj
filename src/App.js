@@ -1,24 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
+import Journal from './Journal.js'
 import './App.css';
+import './Journal.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          tj - training journal on web
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+
+      <Journal
+        year="2019"
+        month="6"
+        day="12"
+        content="PUSH UP LEVEL-1 30/30/30"
+      />
+      <Journal
+        year="2019"
+        month="6"
+        day="10"
+        content="LEG RAISE LEVEL-1 30/30/30"
+      />
     </div>
   );
 }
